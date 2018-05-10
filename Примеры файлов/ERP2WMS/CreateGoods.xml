@@ -1,0 +1,8 @@
+﻿<request xmlns="http://ws.toplogwms.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Goods GoodID="b23ea47c-d250-11e0-9dea-00a0d1e84467" Name="микросхема Н537РУ8А" Article="10184" GoodType="1" BaseMeasure="796" FullName="Н537РУ8А">
+		<Group ID="микросхема" Name="микросхема"/>
+		<TechDocuments DocType="1" DocNumber="бК0.347.243-08ТУ">
+			<Brand BrandID="9571cc62-b773-11e0-bfe5-00a0d1e84467" BrandName="Микрон"/>
+		</TechDocuments>
+	</Goods>
+</request>

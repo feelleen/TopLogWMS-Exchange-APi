@@ -1,0 +1,10 @@
+﻿<request xmlns="http://ws.toplogwms.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Update="false">
+	<Documents DocID="d8407c7e-208b-11e7-95fb-2880231b6518" DocDate="0001-01-01T00:00:00">
+		<BalanceRows GoodID="98f62358-5513-11e2-814e-00155d013501" StockID="20" OwnerID="1" Balance="10"/>
+		<BalanceRows GoodID="f0805770-5514-11e2-814e-00155d013501" StockID="20" OwnerID="1" Balance="16"/>
+		<BalanceRows GoodID="99621218-5517-11e2-814e-00155d013501" StockID="20" OwnerID="1" Balance="4"/>
+		<BalanceRows GoodID="63874c58-c493-11e4-bd99-00155dfecc04" StockID="20" OwnerID="1" Balance="5"/>
+		<BalanceRows GoodID="cf5af32c-d5e6-11e4-bd99-00155dfecc04" StockID="20" OwnerID="1" Balance="2"/>
+		<BalanceRows GoodID="d5f7ef68-5512-11e2-814e-00155d013501" StockID="20" OwnerID="2" Balance="2"/>
+	</Documents>
+</request>

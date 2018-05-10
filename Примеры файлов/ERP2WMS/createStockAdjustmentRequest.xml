@@ -1,0 +1,725 @@
+﻿<request xmlns="http://ws.toplogwms.ru/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Update="false">
+	<Adjustment DocID="2c24a1ac-9896-427f-a654-5a87e32340e3" AdjustmentType="30" Comment="30">
+		<AdjustmentRows Quantity="78" StorageAddress="OldStock">
+			<Good GoodID="760dca5c-984e-11e7-509e-5681ea1ca0a6" Name="резистор С5-16МВ-1-0,1 Ом+/-5%" Article="51669" GoodType="1" BaseMeasure="796" FullName="С5-16МВ-1-0,1 Ом+/-5%">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.513ТУ">
+					<Brand BrandID="a7d1c3a8-ede9-11e2-8801-00a0d1e84467" BrandName="Элия Завод"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="1" Description="(2017.08)&quot;Элия&quot;, (3А5-2), и.н. 270" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="60" StorageAddress="OldStock">
+			<Good GoodID="fdfcb21f-9875-11e7-509e-5681ea1ca0a6" Name="лампа полупроводниковая коммутаторная СКЛ14-Л-2-24П" Article="51671" GoodType="1" BaseMeasure="796" FullName="СКЛ14-Л-2-24П">
+				<Group ID="лампа полупроводниковая коммутаторная" Name="лампа полупроводниковая коммутаторная"/>
+			</Good>
+			<Batch ID="2" Description="(2017.10)&quot;Протон-Импульс&quot;, (4В04-1), и.н. 5197К" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="50" StorageAddress="OldStock">
+			<Good GoodID="1eced323-9eb5-11e7-509e-5681ea1ca0a6" Name="вставка плавкая ВП2Б-В 10А 250В ОТК" Article="51753" GoodType="1" BaseMeasure="796" FullName="ВП2Б-В 10А 250В ОТК">
+				<Group ID="вставка плавкая" Name="вставка плавкая"/>
+			</Good>
+			<Batch ID="3" Description="(2017.03)&quot;Зубово-Полянский з-д радиодеталей&quot;, пар. 139, (К13), и.н. 5145К" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="3" StorageAddress="OldStock">
+			<Good GoodID="7e98dbad-a42c-11e7-6187-5681ea1ca0a6" Name="микросхема К5576РТ1У" Article="51778" GoodType="1" BaseMeasure="796" FullName="К5576РТ1У">
+				<Group ID="микросхема" Name="микросхема"/>
+			</Good>
+			<Batch ID="4" Description="(2017.27)&quot;Миландр&quot; ЭК, изв. 0703-с\17скк от 5.07.17, (4В08-1), и.н. 5181К" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="50" StorageAddress="OldStock">
+			<Good GoodID="5d1fdf73-efa8-11e3-800d-002590c517f1" Name="микросхема 564ИП2В" Article="36002" GoodType="1" BaseMeasure="796" FullName="564ИП2В">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="бК0.347.064ТУ9">
+					<Brand BrandID="92af2b96-1b5d-11e1-a226-00a0d1e84467" BrandName="Экситон АО г. Москва"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="5" Description="(2017.32)&quot;Экситон&quot; ОКБ г. Москва, изв. 872 от 18.09.17, т.з. 257, (2Г2-4), и.н. 46674" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="84" StorageAddress="OldStock">
+			<Good GoodID="5d1fdf7a-efa8-11e3-800d-002590c517f1" Name="микросхема 564ИР13В" Article="36008" GoodType="1" BaseMeasure="796" FullName="564ИР13В">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="бК0.347.064ТУ25">
+					<Brand BrandID="92af2b96-1b5d-11e1-a226-00a0d1e84467" BrandName="Экситон АО г. Москва"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="6" Description="(2017.23)&quot;Экситон ОКБ г. Москва&quot;,изв. 626, т.з. 60, (2Г 2-4), и .н. 45703" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="42" StorageAddress="OldStock">
+			<Good GoodID="5d1fdf7a-efa8-11e3-800d-002590c517f1" Name="микросхема 564ИР13В" Article="36008" GoodType="1" BaseMeasure="796" FullName="564ИР13В">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="бК0.347.064ТУ25">
+					<Brand BrandID="92af2b96-1b5d-11e1-a226-00a0d1e84467" BrandName="Экситон АО г. Москва"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="7" Description="(2017.23)&quot;Экситон ОКБ г. Москва&quot;,изв. 626, т.з. 61, (2Г 2-4), и .н. 45702" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="4265" StorageAddress="OldStock">
+			<Good GoodID="5d1fdf85-efa8-11e3-800d-002590c517f1" Name="транзистор 2Т214А9 (блистер-лента)" Article="36015" GoodType="1" BaseMeasure="796" FullName="2Т214А9 (блистер-лента)">
+				<Group ID="транзистор" Name="транзистор"/>
+				<TechDocuments DocType="1" DocNumber="аА0.339.517ТУ">
+					<Brand BrandID="03bf97db-a2f5-11e0-9acc-00a0d1e84467" BrandName="Далекс"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="8" Description="(15.03)&quot;Далекс&quot;, изв. 3, и.н. 25317" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="3" StorageAddress="OldStock">
+			<Good GoodID="6faf6c16-efbc-11e3-800d-002590c517f1" Name="микросхема 5590КН1Т" Article="36040" GoodType="1" BaseMeasure="796" FullName="5590КН1Т">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.431160.842-01ТУ">
+					<Brand BrandID="e0020149-a940-11e0-b6ed-00a0d1e84467" BrandName="Интеграл"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="9" Description="(14.51) &quot;Интеграл&quot;, изв. 144/863, т.з. 7712, и.н. 5449И" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="20" StorageAddress="OldStock">
+			<Good GoodID="6faf6c18-efbc-11e3-800d-002590c517f1" Name="микросхема 1343ЕИ12У" Article="36042" GoodType="1" BaseMeasure="796" FullName="1343ЕИ12У">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.431420.838-01ТУ">
+					<Brand BrandID="e0020149-a940-11e0-b6ed-00a0d1e84467" BrandName="Интеграл"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="10" Description="(14.19)&quot;Интеграл&quot;, изв. 142\353, и.н. 4452И" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="3400" StorageAddress="OldStock">
+			<Good GoodID="f5ad5c89-efcc-11e3-800d-002590c517f1" Name="конденсатор T491C476M010AT (Kemet)" Article="36046" GoodType="1" BaseMeasure="796" FullName="T491C476M010AT (Kemet)">
+				<Group ID="конденсатор" Name="конденсатор"/>
+			</Good>
+			<Batch ID="11" Description="(14,01) +ГТД, для Ж.А.Е. Рпкб" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="15" StorageAddress="OldStock">
+			<Good GoodID="1ebe2e4e-f06a-11e3-800d-002590c517f1" Name="микросхема 1986ВЕ94Т" Article="36050" GoodType="1" BaseMeasure="796" FullName="1986ВЕ94Т">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.431290.711ТУ">
+					<Brand BrandID="86962425-2628-11e1-8b2f-00a0d1e84467" BrandName="Миландр ПКК"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="12" Description="(2017.34)&quot;Миландр&quot; ЭК, изв. 0949-с\17скв от 31.08.17, т.з. 56, (2Г2-6), и.н. 10159М" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="230" StorageAddress="OldStock">
+			<Good GoodID="aa8cd6a9-f07c-11e3-800d-002590c517f1" Name="конденсатор CL10C680JB8NNNC (Samsung)" Article="36051" GoodType="1" BaseMeasure="796" FullName="CL10C680JB8NNNC (Samsung)">
+				<Group ID="конденсатор" Name="конденсатор"/>
+			</Good>
+			<Batch ID="13" Description="(13.39)+ГТД, для П.О.К. НИИ кп" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="4800" StorageAddress="OldStock">
+			<Good GoodID="aa8cd6ad-f07c-11e3-800d-002590c517f1" Name="резистор RC0805FR075K9L (Yageo)" Article="36054" GoodType="1" BaseMeasure="796" FullName="RC0805FR075K9L (Yageo)">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="14" Description="(13.47)+ГТД, для П.О.К. НИИ кп" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="aa8cd6af-f07c-11e3-800d-002590c517f1" Name="индуктивность LQH32CN100K23L (Murata)" Article="36056" GoodType="1" BaseMeasure="796" FullName="LQH32CN100K23L (Murata)">
+				<Group ID="индуктивность" Name="индуктивность"/>
+			</Good>
+			<Batch ID="15" Description="(б/г) +ГТД, для П.О.К. Нии кп" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="188" StorageAddress="OldStock">
+			<Good GoodID="aa8cd6ce-f07c-11e3-800d-002590c517f1" Name="феррит М10000НМ-К28х16х9" Article="36057" GoodType="1" BaseMeasure="796" FullName="М10000НМ-К28х16х9">
+				<Group ID="феррит" Name="феррит"/>
+			</Good>
+			<Batch ID="16" Description="(15.03)&quot;Нева-Феррит&quot;, и.н. 2852К" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="100" StorageAddress="OldStock">
+			<Good GoodID="aa8cd6ce-f07c-11e3-800d-002590c517f1" Name="феррит М10000НМ-К28х16х9" Article="36057" GoodType="1" BaseMeasure="796" FullName="М10000НМ-К28х16х9">
+				<Group ID="феррит" Name="феррит"/>
+			</Good>
+			<Batch ID="17" Description="(15.04)&quot;Нева-Феррит&quot;, и.н. 2972К" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="23" StorageAddress="OldStock">
+			<Good GoodID="b665fef8-f09f-11e3-800d-002590c517f1" Name="микросхема 564ЛН1 ММ" Article="36058" GoodType="1" BaseMeasure="796" FullName="564ЛН1 ММ">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.431200.136-09ТУ">
+					<Brand BrandID="9571cc62-b773-11e0-bfe5-00a0d1e84467" BrandName="Микрон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="18" Description="(16.51)&quot;Микрон&quot;, изв. 4, т.з. 263, (2Г1-6), и.н. 8079М" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="50" StorageAddress="OldStock">
+			<Good GoodID="7ecf59b8-e79c-11e2-8022-00a0d1e84467" Name="держатель предохранителя ДПБ-В" Article="51645" GoodType="1" BaseMeasure="796" FullName="ДПБ-В">
+				<Group ID="держатель предохранителя" Name="держатель предохранителя"/>
+			</Good>
+			<Batch ID="19" Description="(16.07)&quot;Сейм&quot;, пар. 180, и.н. 36578" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="11" StorageAddress="OldStock">
+			<Good GoodID="f0b4e3a3-e7ad-11e2-8022-00a0d1e84467" Name="конденсатор К10-17Б М47-0,01мкф 10% В ОСМ -9,0" Article="А9290" GoodType="1" BaseMeasure="796" FullName="К10-17Б М47-0,01мкф 10% В ОСМ -9,0">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.107ТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="20" Description="(12.12) &quot;Монолит&quot; перепр. 25.05.13, 121002221\2-3, и.н. 3813А" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="9" StorageAddress="OldStock">
+			<Good GoodID="f0b4e3a5-e7ad-11e2-8022-00a0d1e84467" Name="резистор CRCW25120000Z0EG (CHIP-2512-0 Ohm) (Vishay)" Article="31384" GoodType="1" BaseMeasure="796" FullName="CRCW25120000Z0EG (CHIP-2512-0 Ohm) (Vishay)">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="21" Description="(2013) +ГТД, для З.М.А. Алмаз" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="95" StorageAddress="OldStock">
+			<Good GoodID="2b1b2d60-e870-11e2-8022-00a0d1e84467" Name="модуль ERA-2+ (Mini-Circuits)" Article="51609" GoodType="1" BaseMeasure="796" FullName="ERA-2+ (Mini-Circuits)">
+				<Group ID="модуль" Name="модуль"/>
+			</Good>
+			<Batch ID="22" Description="(12.44) +ГТД, для Ж.А.Е. Сигнал" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="2b1b2d61-e870-11e2-8022-00a0d1e84467" Name="модуль ERA-3+ (Mini-Circuits)" Article="51598" GoodType="1" BaseMeasure="796" FullName="ERA-3+ (Mini-Circuits)">
+				<Group ID="модуль" Name="модуль"/>
+			</Good>
+			<Batch ID="23" Description="(12.44) +ГТД, для Ж.А.Е. Сигнал" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="6" StorageAddress="OldStock">
+			<Good GoodID="2b1b2d78-e870-11e2-8022-00a0d1e84467" Name="микросхема HMC197AE (Hittite)" Article="28005" GoodType="1" BaseMeasure="796" FullName="HMC197AE (Hittite)">
+				<Group ID="микросхема" Name="микросхема"/>
+			</Good>
+			<Batch ID="24" Description="(б/г) +ГТД, для П.О.К. Нии кп" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="7" StorageAddress="OldStock">
+			<Good GoodID="c857e381-d491-11e1-8025-00a0d1e84467" Name="транзистор 2Т313А/ПК ОСМ" Article="28819" GoodType="1" BaseMeasure="796" FullName="2Т313А/ПК ОСМ">
+				<Group ID="транзистор" Name="транзистор"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.432140.256ТУ"/>
+			</Good>
+			<Batch ID="25" Description="(07.12) &quot;Арсенал&quot;, перепр. 12.07, 117/в от 21.12.07, и.н. 5189" ProductionDate="2007-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="90" StorageAddress="OldStock">
+			<Good GoodID="4e0a51e5-d62b-11e1-8025-00a0d1e84467" Name="конденсатор GRM1885C2A220JA01D (Murata)" Article="А2109" GoodType="1" BaseMeasure="796" FullName="GRM1885C2A220JA01D (Murata)">
+				<Group ID="конденсатор" Name="конденсатор"/>
+			</Good>
+			<Batch ID="26" Description="(2015) +ГТД, для П.О.К. нии кп " ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="30" StorageAddress="OldStock">
+			<Good GoodID="0d9bbf57-d633-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МА Н30 100В-0,022мкф (+50/-20%) В ОС" Article="А9729" GoodType="1" BaseMeasure="796" FullName="К10-47МА Н30 100В-0,022мкф (+50/-20%) В ОС">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ; ОЖ0.460.183ТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="27" Description="(12.09) &quot;Монолит&quot;, 120717501/3-2, и.н. 1946А" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="35" StorageAddress="OldStock">
+			<Good GoodID="0d9bbf70-d633-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ МПО 2012М 50В-100пф 5% N " Article="А9706" GoodType="1" BaseMeasure="796" FullName="К10-47МВ МПО 2012М 50В-100пф 5% N ">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="28" Description="(13.10) &quot;Монолит&quot;, 130322214\1-6, и.н. 5053А" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="86" StorageAddress="OldStock">
+			<Good GoodID="0d9bbf70-d633-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ МПО 2012М 50В-100пф 5% N " Article="А9706" GoodType="1" BaseMeasure="796" FullName="К10-47МВ МПО 2012М 50В-100пф 5% N ">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="29" Description="(14.03)&quot;Монолит&quot;, 131219201\1-3, и.н. 6490А" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="114" StorageAddress="OldStock">
+			<Good GoodID="0d9bbf70-d633-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ МПО 2012М 50В-100пф 5% N " Article="А9706" GoodType="1" BaseMeasure="796" FullName="К10-47МВ МПО 2012М 50В-100пф 5% N ">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="30" Description="(14.04)&quot;Монолит&quot;, 131219201\1-5, и.н. 6820А" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="150" StorageAddress="OldStock">
+			<Good GoodID="48db24a7-da10-11e1-8025-00a0d1e84467" Name="конденсатор К10-17В Н20-1200пф 20% N" Article="А9701" GoodType="1" BaseMeasure="796" FullName="К10-17В Н20-1200пф 20% N">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.107ТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="31" Description="(08.02) &quot;Монолит&quot;, перепр. 09.08.12, 071122518/1-1, и.н. 1440А" ProductionDate="2008-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="150" StorageAddress="OldStock">
+			<Good GoodID="48db24cd-da10-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ МПО 5750М 1500В-1000пф 20% N " Article="А9697" GoodType="1" BaseMeasure="796" FullName="К10-47МВ МПО 5750М 1500В-1000пф 20% N ">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="32" Description="(12.11) &quot;Монолит&quot;, 121023239/1, и.н. 2874А" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="300" StorageAddress="OldStock">
+			<Good GoodID="48db24ce-da10-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ МПО 4532М 1000В-820пф 20% N" Article="А9696" GoodType="1" BaseMeasure="796" FullName="К10-47МВ МПО 4532М 1000В-820пф 20% N">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="33" Description="(13.01) &quot;Монолит&quot;, партия 121127238/1, и.н. 3100А" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="150" StorageAddress="OldStock">
+			<Good GoodID="48db24cf-da10-11e1-8025-00a0d1e84467" Name="конденсатор К10-47МВ Н20 4532М 1500В-3300пф 20% N" Article="А9695" GoodType="1" BaseMeasure="796" FullName="К10-47МВ Н20 4532М 1500В-3300пф 20% N">
+				<Group ID="конденсатор" Name="конденсатор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.460.174-МТУ">
+					<Brand BrandID="03bf97e1-a2f5-11e0-9acc-00a0d1e84467" BrandName="Монолит"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="34" Description="(12.11) &quot;Монолит&quot;, 121010502/1, и.н. 2689А" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="100" StorageAddress="OldStock">
+			<Good GoodID="806f13c2-da13-11e1-8025-00a0d1e84467" Name="вставка плавкая ВП1-1 4.0А 250В" Article="А2191" GoodType="1" BaseMeasure="796" FullName="ВП1-1 4.0А 250В">
+				<Group ID="вставка плавкая" Name="вставка плавкая"/>
+				<TechDocuments DocType="1" DocNumber="ОЮ0.480.003ТУ-Р">
+					<Brand BrandID="df2ea6b7-1b53-11e1-a226-00a0d1e84467" BrandName="Радиодеталь"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="35" Description="(15.06)&quot;Зубово-Полянский радиоламповый з-д&quot;, пар. 9, и.н. 28421" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="806f13c2-da13-11e1-8025-00a0d1e84467" Name="вставка плавкая ВП1-1 4.0А 250В" Article="А2191" GoodType="1" BaseMeasure="796" FullName="ВП1-1 4.0А 250В">
+				<Group ID="вставка плавкая" Name="вставка плавкая"/>
+				<TechDocuments DocType="1" DocNumber="ОЮ0.480.003ТУ-Р">
+					<Brand BrandID="df2ea6b7-1b53-11e1-a226-00a0d1e84467" BrandName="Радиодеталь"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="36" Description="(15.07)&quot;Зубово-Полянский радиоламповый з-д&quot;, пар. 10, и.н. 28422" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="100" StorageAddress="OldStock">
+			<Good GoodID="806f13c2-da13-11e1-8025-00a0d1e84467" Name="вставка плавкая ВП1-1 4.0А 250В" Article="А2191" GoodType="1" BaseMeasure="796" FullName="ВП1-1 4.0А 250В">
+				<Group ID="вставка плавкая" Name="вставка плавкая"/>
+				<TechDocuments DocType="1" DocNumber="ОЮ0.480.003ТУ-Р">
+					<Brand BrandID="df2ea6b7-1b53-11e1-a226-00a0d1e84467" BrandName="Радиодеталь"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="37" Description="(15.11)&quot;Зубово-Полянский радиоламповый з-д&quot;, перепр. 16.07, пар. 19, (3Г3-2), и.н. 39490" ProductionDate="2015-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="19" StorageAddress="OldStock">
+			<Good GoodID="806f13ca-da13-11e1-8025-00a0d1e84467" Name="тумблер П2Т-23" Article="А2193" GoodType="1" BaseMeasure="796" FullName="П2Т-23">
+				<Group ID="тумблер" Name="тумблер"/>
+			</Good>
+			<Batch ID="38" Description="(12.09) &quot;Смоленский з-д радиодеталей (ВП)&quot;, изв. 203/17 от 20.09.12, и.н. 6261" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="39" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 07804, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="40" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 08375, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="41" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 08714, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="42" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 08724, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="43" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 08733, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="44" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 09355, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="45" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 09357, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="46" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 09397, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="47" Description="(13.03) &quot;ВЗЭП&quot; изв. 12, з.н. 09435, и.н. 524В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="48" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08293, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="49" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08372, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="50" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08434, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="51" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08541, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="52" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08631, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="53" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08749, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="54" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 08876, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="55" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09186, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="56" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09188, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="57" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09216, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="58" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09252, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="59" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09258, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="60" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09338, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="61" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09343, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="62" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09347, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="63" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09369, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="64" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09422, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="65" Description="(13.03) &quot;ВЗЭП&quot; изв. 13, з.н. 09436, и.н. 525В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="66" Description="(13.03) &quot;ВЗЭП&quot; изв. 14, з.н. 08088, и.н. 526В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="67" Description="(13.03) &quot;ВЗЭП&quot; изв. 14, з.н. 08601, и.н. 526В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="68" Description="(13.03) &quot;ВЗЭП&quot; изв. 14, з.н. 08717, и.н. 526В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="69" Description="(13.03) &quot;ВЗЭП&quot; изв. 14, з.н. 08735, и.н. 526В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="6a0c70a2-dbab-11e1-8025-00a0d1e84467" Name="термометр 2ТУЭ-1" Article="А2204" GoodType="1" BaseMeasure="796" FullName="2ТУЭ-1">
+				<Group ID="термометр" Name="термометр"/>
+			</Good>
+			<Batch ID="70" Description="(13.03) &quot;ВЗЭП&quot; изв. 14, з.н. 09394, и.н. 526В" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="38" StorageAddress="OldStock">
+			<Good GoodID="bcd756f5-3178-11e3-804d-00a0d1e84467" Name="индикатор КИПМО1Г-1Л" Article="29068" GoodType="1" BaseMeasure="796" FullName="КИПМО1Г-1Л">
+				<Group ID="индикатор" Name="индикатор"/>
+			</Good>
+			<Batch ID="71" Description="(13.10) &quot;Планета-Сид&quot;, сопр.л. 439, и.н. 1366К" ProductionDate="2013-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="49" StorageAddress="OldStock">
+			<Good GoodID="bcd756f6-3178-11e3-804d-00a0d1e84467" Name="диод КД271ГС" Article="29069" GoodType="1" BaseMeasure="796" FullName="КД271ГС">
+				<Group ID="диод" Name="диод"/>
+			</Good>
+			<Batch ID="72" Description="(12.06) &quot;ВЗПП-С&quot;, перепр. 13.08, изв. 10, и.н. 1320К" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="4483f2e2-5345-11e3-8056-00a0d1e84467" Name="микросхема 1304ЕР1С (Ni)" Article="29127" GoodType="1" BaseMeasure="796" FullName="1304ЕР1С (Ni)">
+				<Group ID="микросхема" Name="микросхема"/>
+				<TechDocuments DocType="1" DocNumber="АЕЯР.431420.639ТУ">
+					<Brand BrandID="c36327fe-c1b4-11e1-bf74-00a0d1e84467" BrandName="Экситон г. Смоленск"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="73" Description="(16.06)&quot;Экситон&quot; АО, изв. 9, т.з. 2, и.н. 33157" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="22" StorageAddress="OldStock">
+			<Good GoodID="720a5909-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 4,7 кОм +/-5% А-Д-В ОС" Article="32925" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 4,7 кОм +/-5% А-Д-В ОС">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ; ОЖ0.467.138ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="74" Description="(14.08)&quot;Эркон&quot;, и.н. 18628" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="84" StorageAddress="OldStock">
+			<Good GoodID="720a590b-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 1 кОм+/-5% А-Д-В " Article="32926" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 1 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="75" Description="(16.06)&quot;Эркон&quot;, и.н. 35099" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="720a590b-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 1 кОм+/-5% А-Д-В " Article="32926" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 1 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="76" Description="(16.08)&quot;Эркон&quot;, и.н. 36762" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="21" StorageAddress="OldStock">
+			<Good GoodID="720a590c-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 1 Ом+/-5% А-Д-В " Article="32927" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 1 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="77" Description="(12.07) &quot;Эркон&quot;, перепр. 14.07, и.н. 17616" ProductionDate="2012-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="720a5911-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 100 кОм+/-5% А-Д-В " Article="32930" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 100 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="78" Description="(16.08)&quot;Эркон&quot;,и.н.36941 ,(3А5-1)" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="18" StorageAddress="OldStock">
+			<Good GoodID="720a5912-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 150 Ом+/-5% А-Д-В " Article="32931" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 150 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="79" Description="(14.06)&quot;Эркон&quot;, и.н. 16805" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="6" StorageAddress="OldStock">
+			<Good GoodID="720a5913-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 2 кОм+/-5% А-Д-В " Article="32932" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 2 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="80" Description="(16.06)&quot;Эркон&quot;, и.н. 35100" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="18" StorageAddress="OldStock">
+			<Good GoodID="720a5914-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 2,4 кОм+/-5% А-Д-В " Article="32933" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 2,4 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="81" Description="(14.07)&quot;Эркон&quot;, и.н. 17165" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="23" StorageAddress="OldStock">
+			<Good GoodID="720a5915-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 240 Ом+/-5% А-Д-В " Article="32934" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 240 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="82" Description="(14.05)&quot;Эркон&quot;, и.н. 16136" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="23" StorageAddress="OldStock">
+			<Good GoodID="720a5916-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 300 Ом+/-5% А-Д-В " Article="32935" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 300 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="83" Description="(14.05)&quot;Эркон&quot;, и.н. 15925" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="13" StorageAddress="OldStock">
+			<Good GoodID="720a5917-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 33 Ом+/-5% А-Д-В " Article="32936" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 33 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="84" Description="(14.07)&quot;Эркон&quot;, и.н. 17318" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="7" StorageAddress="OldStock">
+			<Good GoodID="720a5918-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 5,1 кОм+/-5% А-Д-В " Article="32937" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 5,1 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="85" Description="(16.05)&quot;Эркон&quot;, и.н. 34761" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="720a5918-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 5,1 кОм+/-5% А-Д-В " Article="32937" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 5,1 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="86" Description="(16.05)&quot;Эркон&quot;, и.н. 35101" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="21" StorageAddress="OldStock">
+			<Good GoodID="720a5919-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 5,1 Ом+/-5% А-Д-В " Article="32938" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 5,1 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="87" Description="(14.08)&quot;Эркон&quot;, и.н. 18447" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="23" StorageAddress="OldStock">
+			<Good GoodID="720a591a-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,125 6,8 кОм+/-5% А-Д-В " Article="32939" GoodType="1" BaseMeasure="796" FullName="С2-33 0,125 6,8 кОм+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="88" Description="(16.06)&quot;Эркон&quot;, и.н. 35384" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="22" StorageAddress="OldStock">
+			<Good GoodID="720a591b-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,25 10 кОм+/-10% А-Д-В " Article="32940" GoodType="1" BaseMeasure="796" FullName="С2-33 0,25 10 кОм+/-10% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="89" Description="(16.06)&quot;Эркон&quot;, и.н. 35097" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="18" StorageAddress="OldStock">
+			<Good GoodID="720a591c-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,5 0,1 Ом+/-5% А-Ж-В " Article="32941" GoodType="1" BaseMeasure="796" FullName="С2-33 0,5 0,1 Ом+/-5% А-Ж-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="90" Description="(14.04)&quot;Эркон&quot;, и.н. 15440" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="14" StorageAddress="OldStock">
+			<Good GoodID="720a591d-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 0,5 4,7 кОм+/-10% А-Д-В " Article="32942" GoodType="1" BaseMeasure="796" FullName="С2-33 0,5 4,7 кОм+/-10% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.093ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="91" Description="(14.02)&quot;Эркон&quot;, и.н. 15624" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="9" StorageAddress="OldStock">
+			<Good GoodID="720a591e-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 1 1 Ом+/-5% А-Д-В " Article="32943" GoodType="1" BaseMeasure="796" FullName="С2-33 1 1 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="92" Description="(14.05)&quot;Эркон&quot;, и.н. 16011" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="9" StorageAddress="OldStock">
+			<Good GoodID="720a591f-5346-11e3-8056-00a0d1e84467" Name="резистор С2-33 1 180 Ом+/-5% А-Д-В " Article="32944" GoodType="1" BaseMeasure="796" FullName="С2-33 1 180 Ом+/-5% А-Д-В ">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="93" Description="(14.03)&quot;Эркон&quot;, и.н. 15441" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="10" StorageAddress="OldStock">
+			<Good GoodID="720a5920-5346-11e3-8056-00a0d1e84467" Name="резистор СП3-19А2-0,5Вт-3,3 кОм+/-10% В" Article="32945" GoodType="1" BaseMeasure="796" FullName="СП3-19А2-0,5Вт-3,3 кОм+/-10% В">
+				<Group ID="резистор" Name="резистор"/>
+			</Good>
+			<Batch ID="94" Description="(14.03)&quot;Арзамасский&quot;, и.н. 16550" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="3" StorageAddress="OldStock">
+			<Good GoodID="720a5921-5346-11e3-8056-00a0d1e84467" Name="резистор СП5-2ВА-0,5Вт-100 Ом+/-5% ОС черт.3а" Article="32946" GoodType="1" BaseMeasure="796" FullName="СП5-2ВА-0,5Вт-100 Ом+/-5% ОС черт.3а">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.468.539ТУ">
+					<Brand BrandID="df2ea6a2-1b53-11e1-a226-00a0d1e84467" BrandName="Контакт г. Йошкар-Ола"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="95" Description="(14.02) &quot;Контакт&quot; ОАО, и.н. 13797" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="1" StorageAddress="OldStock">
+			<Good GoodID="720a5922-5346-11e3-8056-00a0d1e84467" Name="резистор СП5-2ВА-0,5Вт-1 кОм+/-5% ОС черт.3а" Article="32947" GoodType="1" BaseMeasure="796" FullName="СП5-2ВА-0,5Вт-1 кОм+/-5% ОС черт.3а">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.468.539ТУ">
+					<Brand BrandID="df2ea6a2-1b53-11e1-a226-00a0d1e84467" BrandName="Контакт г. Йошкар-Ола"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="96" Description="(14.02) &quot;Контакт&quot; ОАО, и.н. 13796" ProductionDate="2014-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="4" StorageAddress="OldStock">
+			<Good GoodID="d9b16f31-f737-11e5-808e-002590c517f0" Name="резистор С2-29В 0,125 118 кОм+/-0,1%-1,0-А" Article="45734" GoodType="1" BaseMeasure="796" FullName="С2-29В 0,125 118 кОм+/-0,1%-1,0-А">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.099ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="97" Description="(16.01)&quot;Эркон&quot;, и.н. 36354" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="4" StorageAddress="OldStock">
+			<Good GoodID="d9b16f32-f737-11e5-808e-002590c517f0" Name="резистор С2-29В 0,125 12,1 кОм+/-0,1%-1,0-А" Article="45735" GoodType="1" BaseMeasure="796" FullName="С2-29В 0,125 12,1 кОм+/-0,1%-1,0-А">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.099ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="98" Description="(16.07)&quot;Эркон&quot;,и.н.37027,(3А5-1)" ProductionDate="2016-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="25" StorageAddress="OldStock">
+			<Good GoodID="d9b16f33-f737-11e5-808e-002590c517f0" Name="резистор С2-29В 0,125 120 кОм+/-0,1%-1,0-А" Article="45736" GoodType="1" BaseMeasure="796" FullName="С2-29В 0,125 120 кОм+/-0,1%-1,0-А">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.099ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="99" Description="(17.02)&quot;Эркон&quot;, (3А4-2), и.н. 23" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+		<AdjustmentRows Quantity="15" StorageAddress="OldStock">
+			<Good GoodID="d9b16f33-f737-11e5-808e-002590c517f0" Name="резистор С2-29В 0,125 120 кОм+/-0,1%-1,0-А" Article="45736" GoodType="1" BaseMeasure="796" FullName="С2-29В 0,125 120 кОм+/-0,1%-1,0-А">
+				<Group ID="резистор" Name="резистор"/>
+				<TechDocuments DocType="1" DocNumber="ОЖ0.467.099ТУ">
+					<Brand BrandID="8682fb68-74c3-11e1-a705-00a0d1e84467" BrandName="Эркон"/>
+				</TechDocuments>
+			</Good>
+			<Batch ID="100" Description="(17.02)&quot;Эркон&quot;, (3А4-2), и.н. 43029" ProductionDate="2017-01-01T00:00:00"/>
+		</AdjustmentRows>
+	</Adjustment>
+</request>
