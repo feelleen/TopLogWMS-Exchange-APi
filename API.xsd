@@ -40,6 +40,7 @@
 		<xs:attribute name="Key" type="xs:string" use="required"/>
 		<xs:attribute name="Name" type="xs:string" use="required"/>
 		<xs:attribute name="Value" use="required"/>
+		<xs:attribute name="createNewValue" type="xs:boolean" default="false"/>
 	</xs:complexType>
 	<xs:complexType name="Address">
 		<xs:attribute name="PlainAddress" type="xs:string"/>
@@ -64,7 +65,7 @@
 		<xs:choice>
 			<xs:element name="Variant" type="tns:KeepingVariant" minOccurs="0"/>
 			<xs:element name="Reservation" type="tns:Reservation" minOccurs="0"/>
-			<xs:element name="Batch" type="tns:Batch" minOccurs="0"/>
+			<xs:element name="Batch" type="tns:Batch" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
@@ -139,11 +140,13 @@
 	<xs:complexType name="Client">
 		<xs:choice>
 			<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Group" type="tns:Group" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="ClientID" type="xs:string" use="required"/>
 		<xs:attribute name="ClientName" type="xs:string" use="required"/>
 		<xs:attribute name="Phone" type="xs:string"/>
 		<xs:attribute name="Email" type="xs:string"/>
+		<xs:attribute name="codeCIS" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="ClientReturnClaim">
 		<xs:complexContent>
@@ -176,9 +179,11 @@
 	<xs:complexType name="Contractor">
 		<xs:choice>
 			<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Group" type="tns:Group" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="ContractorID" type="xs:string" use="required"/>
 		<xs:attribute name="ContractorName" type="xs:string" use="required"/>
+		<xs:attribute name="codeCIS" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="DeliveryInfo">
 		<xs:choice>
@@ -245,7 +250,7 @@
 		<xs:attribute name="Name" type="xs:string" use="required"/>
 		<xs:attribute name="Article" type="xs:string" use="required"/>
 		<xs:attribute name="GoodType" type="xs:int" default="1"/>
-		<xs:attribute name="BaseMeasure" type="xs:int" default="796"/>
+		<xs:attribute name="BaseMeasure" type="xs:string" default="796"/>
 		<xs:attribute name="FullName" type="xs:string"/>
 		<xs:attribute name="SellerArticle" type="xs:string"/>
 		<xs:attribute name="ERPCode" type="xs:string"/>
@@ -277,7 +282,7 @@
 			<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="ID" type="xs:string" use="required"/>
-		<xs:attribute name="Measure" type="xs:int" use="required"/>
+		<xs:attribute name="Measure" type="xs:string" default="796"/>
 		<xs:attribute name="KeepingVariantType" type="xs:int" use="required"/>
 		<xs:attribute name="Coefficient" type="xs:decimal" use="required"/>
 		<xs:attribute name="Description" type="xs:string"/>
@@ -328,8 +333,12 @@
 		<xs:attribute name="OwnerName" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="Provider">
+		<xs:choice>
+			<xs:element name="Group" type="tns:Group" minOccurs="0"/>
+		</xs:choice>
 		<xs:attribute name="ProviderID" type="xs:string" use="required"/>
 		<xs:attribute name="ProviderName" type="xs:string" use="required"/>
+		<xs:attribute name="codeCIS" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="Range">
 		<xs:attribute name="RangeStart" type="xs:string" use="required"/>
@@ -372,6 +381,8 @@
 	<xs:complexType name="SKU">
 		<xs:choice>
 			<xs:element name="Dimensions" type="tns:Dimensions" minOccurs="0"/>
+			<xs:element name="insertedSKU" type="tns:SKU" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Batch" type="tns:Batch" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
@@ -379,12 +390,14 @@
 		<xs:attribute name="Quality" type="xs:int"/>
 		<xs:attribute name="Barcode" type="xs:string"/>
 		<xs:attribute name="Description" type="xs:string"/>
+		<xs:attribute name="ID" type="xs:string"/>
+		<xs:attribute name="StatusID" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="ShipmentAdvice">
 		<xs:choice>
 			<xs:element name="Order" type="tns:OrderLink"/>
 			<xs:element name="Doc" type="tns:AdviceDoc" minOccurs="0"/>
-			<xs:element name="CargoUnits" type="tns:CargoUnit" maxOccurs="unbounded"/>
+			<xs:element name="CargoUnits" type="tns:CargoUnit" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="AdviceRows" type="tns:AdviceRow" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="DiffRows" type="tns:AdviceRow" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="TripDeparture" type="tns:TripDeparture" minOccurs="0"/>
@@ -414,7 +427,7 @@
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 		<xs:attribute name="ShipmentDate" type="xs:date"/>
 		<xs:attribute name="Prelimenary" type="xs:boolean"/>
-		<xs:attribute name="StockID" type="xs:int"/>
+		<xs:attribute name="StockID" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:integer"/>
 		<xs:attribute name="QualityID" type="xs:integer"/>
 		<xs:attribute name="Price" type="xs:decimal"/>
@@ -473,14 +486,20 @@
 	<xs:complexType name="TripDeparture">
 		<xs:choice>
 			<xs:element name="Trip" type="tns:OrderLink"/>
-			<xs:element name="CargoUnits" type="tns:CargoUnit" maxOccurs="unbounded"/>
-			<xs:element name="AdviceRows" type="tns:AdviceRow" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="CargoUnits" type="tns:CargoUnit" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="TripDepartureRow" type="tns:TripDepartureRow" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="Driver" type="tns:Driver" minOccurs="0"/>
 			<xs:element name="Vehicle" type="tns:Vehicle" minOccurs="0"/>
 			<xs:element name="Stamp" type="xs:string"/>
 		</xs:choice>
 		<xs:attribute name="ArrivalDate" type="xs:dateTime" use="required"/>
 		<xs:attribute name="DepartureDate" type="xs:dateTime" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="TripDepartureRow">
+		<xs:choice>
+			<xs:element name="ShipmentOrderRow" type="tns:AdviceRow" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="ShipmentOrderID" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="TripOrder">
 		<xs:complexContent>
@@ -706,6 +725,7 @@
 	<xs:complexType name="getSKUrequest">
 		<xs:choice>
 			<xs:element name="Barcode" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="SKUID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 	</xs:complexType>
 	<xs:complexType name="getSKUresponse">
