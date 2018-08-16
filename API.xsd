@@ -65,6 +65,7 @@
 		<xs:attribute name="DocDate" type="xs:dateTime" use="required"/>
 		<xs:attribute name="Storeman" type="xs:string"/>
 		<xs:attribute name="Comment" type="xs:string"/>
+		<xs:attribute name="Operation" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="AdviceRow">
 		<xs:choice>
@@ -82,6 +83,7 @@
 		<xs:attribute name="ProblemID" type="xs:integer"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
 		<xs:attribute name="OrderID" type="xs:string"/>
+		<xs:attribute name="returnCause" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="BalanceRow">
 		<xs:choice>
@@ -117,6 +119,7 @@
 		<xs:attribute name="SerialNumber" type="xs:string"/>
 		<xs:attribute name="AdditionalInf" type="xs:string"/>
 		<xs:attribute name="StatusID" type="xs:int"/>
+		<xs:attribute name="ReceivingDocumentID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="Brand">
 		<xs:attribute name="BrandID" type="xs:string" use="required"/>
@@ -156,6 +159,7 @@
 		<xs:attribute name="Phone" type="xs:string"/>
 		<xs:attribute name="Email" type="xs:string"/>
 		<xs:attribute name="codeCIS" type="xs:string"/>
+		<xs:attribute name="АctualАddress" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="ClientReturnClaim">
 		<xs:complexContent>
@@ -242,6 +246,32 @@
 		<xs:attribute name="Description" type="xs:string"/>
 		<xs:attribute name="DeletionMark" type="xs:boolean"/>
 	</xs:complexType>
+	<xs:complexType name="GetDeleteBarCodeRequest">
+		<xs:choice>
+			<xs:element name="GetDeleteBarCodeRow" type="tns:GetDeleteBarCodeRow" maxOccurs="unbounded"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="GetDeleteBarCodeResponse">
+		<xs:complexContent>
+			<xs:extension base="tns:Response">
+				<xs:choice>
+					<xs:element name="GetDeleteBarCodeResponseRow" type="tns:GetDeleteBarCodeResponseRow" maxOccurs="unbounded"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="GetDeleteBarCodeResponseRow">
+		<xs:choice>
+			<xs:element name="BarCode" type="xs:string" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="Type" type="xs:string" use="required"/>
+		<xs:attribute name="ID" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="GetDeleteBarCodeRow">
+		<xs:attribute name="SKUID" type="xs:string"/>
+		<xs:attribute name="KeepingVariantID" type="xs:string"/>
+		<xs:attribute name="Action" type="xs:int" use="required"/>
+	</xs:complexType>
 	<xs:complexType name="Good">
 		<xs:choice>
 			<xs:element name="Group" type="tns:Group" minOccurs="0"/>
@@ -269,6 +299,7 @@
 		<xs:attribute name="IsMeasurable" type="xs:boolean"/>
 		<xs:attribute name="Size" type="xs:int"/>
 		<xs:attribute name="NumberOfPackages" type="xs:int"/>
+		<xs:attribute name="Turnover" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="GoodDimensions">
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
@@ -467,6 +498,8 @@
 		<xs:attribute name="DocID" type="xs:string" use="required"/>
 		<xs:attribute name="AdjustmentType" type="xs:int" use="required"/>
 		<xs:attribute name="Comment" type="xs:string"/>
+		<xs:attribute name="DocNum" type="xs:string"/>
+		<xs:attribute name="CompletionDate" type="xs:date"/>
 	</xs:complexType>
 	<xs:complexType name="StockAdjustmentRow">
 		<xs:choice>
@@ -530,10 +563,17 @@
 			<xs:element name="Driver" type="tns:Driver" minOccurs="0"/>
 			<xs:element name="Vehicle" type="tns:Vehicle" minOccurs="0"/>
 			<xs:element name="Stamp" type="xs:string"/>
+			<xs:element name="TripDepartureOrderRow" type="tns:TripDepartureOrderRow" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="ArrivalDate" type="xs:dateTime" use="required"/>
 		<xs:attribute name="DepartureDate" type="xs:dateTime" use="required"/>
 		<xs:attribute name="DocumentID" type="xs:string"/>
+	</xs:complexType>
+	<xs:complexType name="TripDepartureOrderRow">
+		<xs:attribute name="ShipmentOrderID" type="xs:string"/>
+		<xs:attribute name="Weight" type="xs:decimal"/>
+		<xs:attribute name="Volume" type="xs:decimal"/>
+		<xs:attribute name="StackOrder" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="TripDepartureRow">
 		<xs:choice>
