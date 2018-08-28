@@ -84,6 +84,7 @@
 		<xs:attribute name="FeatureID" type="xs:string"/>
 		<xs:attribute name="OrderID" type="xs:string"/>
 		<xs:attribute name="returnCause" type="xs:string"/>
+		<xs:attribute name="SKUID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="BalanceRow">
 		<xs:choice>
@@ -120,6 +121,7 @@
 		<xs:attribute name="AdditionalInf" type="xs:string"/>
 		<xs:attribute name="StatusID" type="xs:int"/>
 		<xs:attribute name="ReceivingDocumentID" type="xs:string"/>
+		<xs:attribute name="BatchType" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="Brand">
 		<xs:attribute name="BrandID" type="xs:string" use="required"/>
@@ -226,6 +228,7 @@
 		<xs:attribute name="Weight" type="xs:decimal"/>
 		<xs:attribute name="Length" type="xs:decimal"/>
 		<xs:attribute name="Capacity" type="xs:decimal"/>
+		<xs:attribute name="ntWeight" type="xs:decimal"/>
 	</xs:complexType>
 	<xs:complexType name="Driver">
 		<xs:attribute name="DriverID" type="xs:string" use="required"/>
