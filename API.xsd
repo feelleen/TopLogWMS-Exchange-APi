@@ -92,7 +92,8 @@
 		<xs:attribute name="QuantityVar" type="xs:decimal"/>
 		<xs:attribute name="CargoID" type="xs:string"/>
 		<xs:attribute name="OrderRowID" type="xs:string"/>
-		<xs:attribute name="QualityID" type="xs:integer"/>
+		<xs:attribute name="QualityID" type="xs:string"/>
+		<xs:attribute name="QualityName" type="xs:string"/>
 		<xs:attribute name="ProblemID" type="xs:integer"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
 		<xs:attribute name="OrderID" type="xs:string"/>
@@ -101,11 +102,15 @@
 		<xs:attribute name="BlockReason" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="AssemblyAdvice">
-		<xs:choice>
-			<xs:element name="Kit" type="tns:Kit" maxOccurs="unbounded"/>
-		</xs:choice>
-		<xs:attribute name="DocID" type="xs:string" use="required"/>
-		<xs:attribute name="OrderID" type="xs:string" use="required"/>
+		<xs:complexContent>
+			<xs:extension base="tns:AdviceDoc">
+				<xs:choice>
+					<xs:element name="Kit" type="tns:Kit" maxOccurs="unbounded"/>
+				</xs:choice>
+				<xs:attribute name="OrderID" type="xs:string" use="required"/>
+				<xs:attribute name="DocType" type="xs:int" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="AssemblyOrder">
 		<xs:complexContent>
@@ -144,12 +149,14 @@
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
 		<xs:attribute name="StockID" type="xs:string" use="required"/>
+		<xs:attribute name="StockName" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:string"/>
 		<xs:attribute name="Balance" type="xs:decimal"/>
 		<xs:attribute name="Diff" type="xs:decimal"/>
 		<xs:attribute name="Reserved" type="xs:decimal"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
-		<xs:attribute name="Quality" type="xs:int"/>
+		<xs:attribute name="Quality" type="xs:string"/>
+		<xs:attribute name="KeepingVariantID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="BarCode">
 		<xs:attribute name="Action" type="xs:int" use="required"/>
@@ -175,6 +182,7 @@
 		<xs:attribute name="StatusID" type="xs:int"/>
 		<xs:attribute name="ReceivingDocumentID" type="xs:string"/>
 		<xs:attribute name="BatchType" type="xs:int"/>
+		<xs:attribute name="CustomsDeclarationNum" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="Brand">
 		<xs:attribute name="BrandID" type="xs:string" use="required"/>
@@ -257,6 +265,7 @@
 					<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:choice>
 				<xs:attribute name="StockID" type="xs:integer"/>
+				<xs:attribute name="StockName" type="xs:string"/>
 				<xs:attribute name="OwnerID" type="xs:string"/>
 				<xs:attribute name="ClientID" type="xs:string"/>
 				<xs:attribute name="CauseID" type="xs:integer"/>
@@ -271,7 +280,7 @@
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
-		<xs:attribute name="Quality" type="xs:integer"/>
+		<xs:attribute name="Quality" type="xs:string"/>
 		<xs:attribute name="Price" type="xs:decimal"/>
 		<xs:attribute name="InsurancePrice" type="xs:decimal"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
@@ -306,9 +315,11 @@
 			<xs:element name="Contractor" type="tns:Contractor" minOccurs="0"/>
 			<xs:element name="Address" type="tns:Address" minOccurs="0"/>
 			<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+			<xs:element name="Shipper" type="tns:Contractor" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="Delivery" type="xs:string"/>
-		<xs:attribute name="DeliveryType" type="xs:integer"/>
+		<xs:attribute name="DeliveryID" type="xs:string"/>
+		<xs:attribute name="DeliveryType" type="xs:string"/>
 		<xs:attribute name="DeliveryService" type="xs:string"/>
 		<xs:attribute name="Direction" type="xs:string"/>
 		<xs:attribute name="RouteDate" type="xs:dateTime"/>
@@ -323,6 +334,7 @@
 		<xs:attribute name="FeatureID" type="xs:string"/>
 		<xs:attribute name="Diff" type="xs:decimal" use="required"/>
 		<xs:attribute name="StockID" type="xs:int" use="required"/>
+		<xs:attribute name="StockName" type="xs:string"/>
 		<xs:attribute name="AddressID" type="xs:string" use="required"/>
 	</xs:complexType>
 	<xs:complexType name="Dimensions">
@@ -593,7 +605,7 @@
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="FeatureID" type="xs:string"/>
 		<xs:attribute name="VariantID" type="xs:string"/>
-		<xs:attribute name="Quality" type="xs:int"/>
+		<xs:attribute name="Quality" type="xs:string"/>
 		<xs:attribute name="Barcode" type="xs:string"/>
 		<xs:attribute name="Description" type="xs:string"/>
 		<xs:attribute name="ID" type="xs:string"/>
@@ -632,6 +644,7 @@
 		<xs:choice>
 			<xs:element name="DeliveryInfo" type="tns:DeliveryInfo" minOccurs="0"/>
 			<xs:element name="Requirements" type="tns:Requirement" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Batch" type="tns:Batch" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="OrderRowID" type="xs:string"/>
 		<xs:attribute name="GoodID" type="xs:string"/>
@@ -640,8 +653,10 @@
 		<xs:attribute name="ShipmentDate" type="xs:date"/>
 		<xs:attribute name="Prelimenary" type="xs:boolean"/>
 		<xs:attribute name="StockID" type="xs:string"/>
+		<xs:attribute name="StockName" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:integer"/>
-		<xs:attribute name="QualityID" type="xs:integer"/>
+		<xs:attribute name="QualityID" type="xs:string"/>
+		<xs:attribute name="QualityName" type="xs:string"/>
 		<xs:attribute name="Price" type="xs:decimal"/>
 		<xs:attribute name="InsurancePrice" type="xs:decimal"/>
 		<xs:attribute name="ShipmentGroup" type="xs:integer"/>
@@ -685,7 +700,7 @@
 		</xs:choice>
 		<xs:attribute name="StorageAddress" type="xs:string" use="required"/>
 		<xs:attribute name="CargoID" type="xs:string"/>
-		<xs:attribute name="Quality" type="xs:integer"/>
+		<xs:attribute name="Quality" type="xs:string"/>
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 		<xs:attribute name="KeepingVariantID" type="xs:string"/>
 	</xs:complexType>
@@ -704,15 +719,15 @@
 		<xs:attribute name="StoremanID" type="xs:string"/>
 		<xs:attribute name="Operation" type="xs:string"/>
 	</xs:complexType>
-	<xs:complexType name="StocktackingPlan">
+	<xs:complexType name="StocktakingPlan">
 		<xs:choice>
-			<xs:element name="StocktackingPlanRow" type="tns:StocktackingPlanRow" maxOccurs="unbounded"/>
+			<xs:element name="StocktakingPlanRow" type="tns:StocktakingPlanRow" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="Stock" type="tns:Stock" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="DocID" type="xs:string"/>
 		<xs:attribute name="DocNum" type="xs:string"/>
 	</xs:complexType>
-	<xs:complexType name="StocktackingPlanRow">
+	<xs:complexType name="StocktakingPlanRow">
 		<xs:sequence>
 			<xs:element name="Requirements" type="tns:Requirement" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
@@ -753,8 +768,10 @@
 		<xs:attribute name="GoodName" type="xs:string"/>
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 		<xs:attribute name="StockID" type="xs:string"/>
+		<xs:attribute name="StockName" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:string"/>
-		<xs:attribute name="QualityID" type="xs:int"/>
+		<xs:attribute name="QualityID" type="xs:string"/>
+		<xs:attribute name="QualityName" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="TripDeparture">
 		<xs:choice>
@@ -802,6 +819,7 @@
 				</xs:choice>
 				<xs:attribute name="DepartureDate" type="xs:dateTime" use="required"/>
 				<xs:attribute name="StockID" type="xs:integer"/>
+				<xs:attribute name="StockName" type="xs:string"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -924,14 +942,6 @@
 			</xs:element>
 		</xs:choice>
 	</xs:complexType>
-	<xs:complexType name="createInvPlanRequest">
-		<xs:attribute name="StockID" type="xs:string"/>
-		<xs:attribute name="Operation" type="xs:string"/>
-		<xs:attribute name="Person" type="xs:string"/>
-		<xs:attribute name="DocNum" type="xs:string"/>
-		<xs:attribute name="Comment" type="xs:string"/>
-		<xs:attribute name="InvPlanID" type="xs:string"/>
-	</xs:complexType>
 	<xs:complexType name="createKeepingVariantRequest">
 		<xs:choice>
 			<xs:element name="KeepingVariants" type="tns:KeepingVariant" maxOccurs="unbounded"/>
@@ -1023,9 +1033,9 @@
 		</xs:choice>
 		<xs:attribute name="Update" type="xs:boolean" default="false"/>
 	</xs:complexType>
-	<xs:complexType name="createStocktackingPlanRequest">
+	<xs:complexType name="createStocktakingPlanRequest">
 		<xs:choice>
-			<xs:element name="Documents" type="tns:StocktackingPlan" maxOccurs="unbounded"/>
+			<xs:element name="Documents" type="tns:StocktakingPlan" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="Update" type="xs:boolean"/>
 	</xs:complexType>
@@ -1171,6 +1181,7 @@
 																</xs:sequence>
 																<xs:attribute name="KeepingVariantID" type="xs:string" use="required"/>
 																<xs:attribute name="QualityID" type="xs:string"/>
+																<xs:attribute name="QualityName" type="xs:string"/>
 																<xs:attribute name="OwnerID" type="xs:string"/>
 																<xs:attribute name="FeatureID" type="xs:string"/>
 																<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
