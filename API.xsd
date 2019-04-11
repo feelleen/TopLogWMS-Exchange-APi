@@ -124,6 +124,7 @@
 				<xs:attribute name="GoodName" type="xs:string"/>
 				<xs:attribute name="FeatureID" type="xs:string"/>
 				<xs:attribute name="FeatureName" type="xs:string"/>
+				<xs:attribute name="BatchID" type="xs:string"/>
 				<xs:attribute name="Quantity" type="xs:int" use="required"/>
 				<xs:attribute name="AssemblyDate" type="xs:dateTime"/>
 				<xs:attribute name="DocType" type="xs:int" use="required"/>
@@ -140,6 +141,7 @@
 		<xs:attribute name="Quantity" type="xs:int" use="required"/>
 		<xs:attribute name="ChanID" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:string"/>
+		<xs:attribute name="BatchID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="BalanceRow">
 		<xs:choice>
@@ -1157,6 +1159,7 @@
 			<xs:element name="Goods" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="SKUID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="AreaID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="AddressID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="BalanceDate" type="xs:dateTime"/>
 	</xs:complexType>
