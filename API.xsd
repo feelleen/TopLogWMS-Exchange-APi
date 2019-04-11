@@ -125,7 +125,7 @@
 				<xs:attribute name="FeatureID" type="xs:string"/>
 				<xs:attribute name="FeatureName" type="xs:string"/>
 				<xs:attribute name="BatchID" type="xs:string"/>
-				<xs:attribute name="Quantity" type="xs:int" use="required"/>
+				<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 				<xs:attribute name="AssemblyDate" type="xs:dateTime"/>
 				<xs:attribute name="DocType" type="xs:int" use="required"/>
 				<xs:attribute name="AssembledChanID" type="xs:string"/>
@@ -138,7 +138,7 @@
 		</xs:choice>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
-		<xs:attribute name="Quantity" type="xs:int" use="required"/>
+		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 		<xs:attribute name="ChanID" type="xs:string"/>
 		<xs:attribute name="OwnerID" type="xs:string"/>
 		<xs:attribute name="BatchID" type="xs:string"/>
