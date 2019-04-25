@@ -656,7 +656,7 @@
 		<xs:attribute name="Prelimenary" type="xs:boolean"/>
 		<xs:attribute name="StockID" type="xs:string"/>
 		<xs:attribute name="StockName" type="xs:string"/>
-		<xs:attribute name="OwnerID" type="xs:integer"/>
+		<xs:attribute name="OwnerID" type="xs:string"/>
 		<xs:attribute name="QualityID" type="xs:string"/>
 		<xs:attribute name="QualityName" type="xs:string"/>
 		<xs:attribute name="Price" type="xs:decimal"/>
@@ -728,6 +728,8 @@
 		</xs:choice>
 		<xs:attribute name="DocID" type="xs:string"/>
 		<xs:attribute name="DocNum" type="xs:string"/>
+		<xs:attribute name="Comment" type="xs:string"/>
+		<xs:attribute name="OwnerID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="StocktakingPlanRow">
 		<xs:sequence>
