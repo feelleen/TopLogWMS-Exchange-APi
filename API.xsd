@@ -21,6 +21,9 @@
 		<xs:choice>
 			<xs:element name="Reservation" type="tns:Reservation" minOccurs="0"/>
 			<xs:element name="Batch" type="tns:Batch" minOccurs="0"/>
+			<xs:element name="OrderRowOpInstruction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="Requirements" type="tns:Requirement" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="SKU" type="tns:SKU" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="OrderRowID" type="xs:string"/>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
@@ -135,6 +138,7 @@
 	<xs:complexType name="AssemblyOrderRow">
 		<xs:choice>
 			<xs:element name="Reservation" type="tns:Reservation" minOccurs="0"/>
+			<xs:element name="SKU" type="tns:SKU" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
@@ -277,6 +281,7 @@
 	<xs:complexType name="ClientReturnClaimRow">
 		<xs:choice>
 			<xs:element name="Order" type="tns:OrderLink" minOccurs="0"/>
+			<xs:element name="OrderRowOpInstruction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="ClaimRowID" type="xs:string"/>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
@@ -403,7 +408,7 @@
 			<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="TechDocuments" type="tns:TechDocument" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="BundleContent" type="tns:BundleContent" minOccurs="0" maxOccurs="unbounded"/>
-			<xs:element name="OpInstruction" type="tns:OperationalInstruction" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OpInstruction" type="tns:OpInstruction" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="StockGroup" type="tns:StockGroup" minOccurs="0"/>
 			<xs:element name="GoodsCategory" type="tns:GoodsCategory" minOccurs="0"/>
 			<xs:element name="SeasonalGroup" type="tns:SeasonalGroup" minOccurs="0"/>
@@ -485,14 +490,16 @@
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
 	</xs:complexType>
-	<xs:complexType name="OperationalInstruction">
+	<xs:complexType name="OpInstruction">
 		<xs:attribute name="Operation" type="xs:int" use="required"/>
 		<xs:attribute name="Instruction" type="xs:string" use="required"/>
+		<xs:attribute name="InstructionID" type="xs:string"/>
+		<xs:attribute name="InstructionName" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="OrderLink">
 		<xs:choice>
 			<xs:element name="Stock" type="tns:Stock" minOccurs="0"/>
-			<xs:element name="Instruction" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OrderOpInstruction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="OrderID" type="xs:string" use="required"/>
 		<xs:attribute name="OrderNum" type="xs:string"/>
@@ -612,6 +619,7 @@
 		<xs:attribute name="Description" type="xs:string"/>
 		<xs:attribute name="ID" type="xs:string"/>
 		<xs:attribute name="StatusID" type="xs:int"/>
+		<xs:attribute name="SKUName"/>
 	</xs:complexType>
 	<xs:complexType name="SeasonalGroup">
 		<xs:attribute name="SeasonalGroupName" type="xs:string" use="required"/>
@@ -647,6 +655,8 @@
 			<xs:element name="DeliveryInfo" type="tns:DeliveryInfo" minOccurs="0"/>
 			<xs:element name="Requirements" type="tns:Requirement" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="Batch" type="tns:Batch" minOccurs="0"/>
+			<xs:element name="OrderRowOpInstruction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="SKU" type="tns:SKU" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="OrderRowID" type="xs:string"/>
 		<xs:attribute name="GoodID" type="xs:string"/>
@@ -765,6 +775,8 @@
 	<xs:complexType name="TransferOrderRow">
 		<xs:choice>
 			<xs:element name="Requirements" type="tns:Requirement" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="OrderRowOpInstruction" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="SKU" type="tns:SKU" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="OrderRowID" type="xs:string"/>
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
@@ -818,7 +830,7 @@
 				<xs:choice>
 					<xs:element name="Driver" type="tns:Driver" minOccurs="0"/>
 					<xs:element name="Vehicle" type="tns:Vehicle" minOccurs="0"/>
-					<xs:element name="Tasks" type="tns:TripOrderTask" maxOccurs="unbounded"/>
+					<xs:element name="Tasks" type="tns:TripOrderTask" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="Options" type="tns:TripOrderOptions" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:choice>
 				<xs:attribute name="DepartureDate" type="xs:dateTime" use="required"/>
@@ -956,6 +968,12 @@
 	<xs:complexType name="createKitOrderRequest">
 		<xs:choice>
 			<xs:element name="Orders" type="tns:KitOrder" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:choice>
+		<xs:attribute name="Update" type="xs:boolean" default="false"/>
+	</xs:complexType>
+	<xs:complexType name="createOrderOperationInstructionRequest">
+		<xs:choice>
+			<xs:element name="OperationalInstruction" type="tns:OpInstruction" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="Update" type="xs:boolean" default="false"/>
 	</xs:complexType>
