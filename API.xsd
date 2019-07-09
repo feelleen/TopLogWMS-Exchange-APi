@@ -7,13 +7,16 @@
 					<xs:element name="Provider" type="tns:Provider" minOccurs="0"/>
 					<xs:element name="CargoUnits" type="tns:CargoUnit" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="Goods" type="tns:Good" minOccurs="0" maxOccurs="unbounded"/>
-					<xs:element name="OrderRows" type="tns:AcceptanceOrderRow" maxOccurs="unbounded"/>
+					<xs:element name="OrderRows" type="tns:AcceptanceOrderRow" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:choice>
 				<xs:attribute name="ArrivalDate" type="xs:date"/>
 				<xs:attribute name="AcceptanceDate" type="xs:date"/>
 				<xs:attribute name="ContractID" type="xs:string"/>
 				<xs:attribute name="ContainerNum" type="xs:string"/>
+				<xs:attribute name="OrderWeight" type="xs:decimal"/>
+				<xs:attribute name="OrderVolume" type="xs:decimal"/>
+				<xs:attribute name="UnitsCount" type="xs:int"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -39,6 +42,7 @@
 		<xs:attribute name="VATaxPercent" type="xs:int"/>
 		<xs:attribute name="VATaxSum" type="xs:decimal"/>
 		<xs:attribute name="VerifyPercent" type="xs:decimal"/>
+		<xs:attribute name="AcceptanceAsOrdered" type="xs:boolean"/>
 	</xs:complexType>
 	<xs:complexType name="AccountTag">
 		<xs:attribute name="ID" type="xs:string" use="required"/>
@@ -356,6 +360,8 @@
 		<xs:attribute name="DriverID" type="xs:string" use="required"/>
 		<xs:attribute name="DriverName" type="xs:string" use="required"/>
 		<xs:attribute name="BarCode" type="xs:string"/>
+		<xs:attribute name="Phone1" type="xs:string"/>
+		<xs:attribute name="Phone2" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="Error">
 		<xs:attribute name="ErrorCode" type="xs:int" use="required"/>
@@ -428,11 +434,11 @@
 		<xs:attribute name="StackOrder" type="xs:int"/>
 		<xs:attribute name="IsBundle" type="xs:boolean" default="false"/>
 		<xs:attribute name="IsMeasurable" type="xs:boolean"/>
-		<xs:attribute name="Size" type="xs:int"/>
 		<xs:attribute name="NumberOfPackages" type="xs:int"/>
 		<xs:attribute name="Turnover" type="xs:int"/>
 		<xs:attribute name="Fragile" type="xs:int"/>
 		<xs:attribute name="IsValued" type="xs:int"/>
+		<xs:attribute name="StandartSizeID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="GoodDimensions">
 		<xs:attribute name="GoodID" type="xs:string" use="required"/>
@@ -512,6 +518,7 @@
 		<xs:attribute name="Comment" type="xs:string"/>
 		<xs:attribute name="ProviderID" type="xs:string"/>
 		<xs:attribute name="BarCode" type="xs:string"/>
+		<xs:attribute name="isRevoked" type="xs:boolean"/>
 	</xs:complexType>
 	<xs:complexType name="OrderProblem">
 		<xs:all>
@@ -680,6 +687,10 @@
 		<xs:attribute name="VATaxSum" type="xs:decimal"/>
 		<xs:attribute name="CargoID" type="xs:string"/>
 	</xs:complexType>
+	<xs:complexType name="StandartSize">
+		<xs:attribute name="StandartSizeID" type="xs:string"/>
+		<xs:attribute name="StandartSizeName" type="xs:string" use="required"/>
+	</xs:complexType>
 	<xs:complexType name="StatusSKU">
 		<xs:attribute name="SKUID" type="xs:string" use="required"/>
 		<xs:attribute name="StatusID" type="xs:int" use="required"/>
@@ -824,6 +835,13 @@
 		</xs:choice>
 		<xs:attribute name="ShipmentOrderID" type="xs:string" use="required"/>
 	</xs:complexType>
+	<xs:complexType name="TripDepartureStatus">
+		<xs:attribute name="StatusName" type="xs:string"/>
+		<xs:attribute name="StatusCode" type="xs:int" use="required"/>
+		<xs:attribute name="VehicleID" type="xs:string" use="required"/>
+		<xs:attribute name="TripID" type="xs:string" use="required"/>
+		<xs:attribute name="StatusDate" type="xs:dateTime"/>
+	</xs:complexType>
 	<xs:complexType name="TripOrder">
 		<xs:complexContent>
 			<xs:extension base="tns:OrderLink">
@@ -877,6 +895,11 @@
 			<xs:element name="SKU" type="tns:StatusSKU" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="ClearStatus" type="xs:boolean" default="false"/>
+	</xs:complexType>
+	<xs:complexType name="changeTripDepartureStatusRequest">
+		<xs:sequence>
+			<xs:element name="TripDepartureStatus" type="tns:TripDepartureStatus" maxOccurs="unbounded"/>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="createAcceptanceOrderRequest">
 		<xs:choice>
@@ -1036,6 +1059,11 @@
 		<xs:choice>
 			<xs:element name="Orders" type="tns:ShipmentOrderRow" maxOccurs="unbounded"/>
 		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="createStandartSizeRequest">
+		<xs:sequence>
+			<xs:element name="StandartSize" type="tns:StandartSize" maxOccurs="unbounded"/>
+		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="createStockAdjustmentRequest">
 		<xs:all>
