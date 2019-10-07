@@ -77,6 +77,10 @@
 		<xs:attribute name="Flat" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="AdviceDoc">
+		<xs:choice>
+			<xs:element name="InvoiceNum" type="xs:string" minOccurs="0"/>
+			<xs:element name="InvoiceDate" type="xs:dateTime" minOccurs="0"/>
+		</xs:choice>
 		<xs:attribute name="DocID" type="xs:string" use="required"/>
 		<xs:attribute name="DocNum" type="xs:int" use="required"/>
 		<xs:attribute name="DocDate" type="xs:dateTime" use="required"/>
@@ -107,6 +111,7 @@
 		<xs:attribute name="ReturnCause" type="xs:string"/>
 		<xs:attribute name="SKUID" type="xs:string"/>
 		<xs:attribute name="BlockReason" type="xs:string"/>
+		<xs:attribute name="CategoryID" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="AssemblyAdvice">
 		<xs:complexContent>
@@ -321,11 +326,10 @@
 	</xs:complexType>
 	<xs:complexType name="DeliveryInfo">
 		<xs:choice>
-			<xs:element name="Route" type="tns:Route" minOccurs="0"/>
+			<xs:element name="Address" type="tns:Address" minOccurs="0"/>
 			<xs:element name="Client" type="tns:Client" minOccurs="0"/>
 			<xs:element name="Contractor" type="tns:Contractor" minOccurs="0"/>
-			<xs:element name="Address" type="tns:Address" minOccurs="0"/>
-			<xs:element name="Comment" type="xs:string" minOccurs="0"/>
+			<xs:element name="Route" type="tns:Route" minOccurs="0"/>
 			<xs:element name="Shipper" type="tns:Contractor" minOccurs="0"/>
 		</xs:choice>
 		<xs:attribute name="Delivery" type="xs:string"/>
@@ -333,8 +337,6 @@
 		<xs:attribute name="DeliveryType" type="xs:string"/>
 		<xs:attribute name="DeliveryService" type="xs:string"/>
 		<xs:attribute name="Direction" type="xs:string"/>
-		<xs:attribute name="RouteDate" type="xs:dateTime"/>
-		<xs:attribute name="DocumentControl" type="xs:int"/>
 	</xs:complexType>
 	<xs:complexType name="DeliveryOptions"/>
 	<xs:complexType name="DifferenceRow">
@@ -502,6 +504,21 @@
 		<xs:attribute name="InstructionID" type="xs:string"/>
 		<xs:attribute name="InstructionName" type="xs:string"/>
 	</xs:complexType>
+	<xs:complexType name="Order">
+		<xs:complexContent>
+			<xs:extension base="tns:OrderLink">
+				<xs:choice>
+					<xs:element name="DeliveryInfo" type="tns:DeliveryInfo"/>
+					<xs:element name="DeliveryOptions" type="tns:DeliveryOptions" minOccurs="0"/>
+					<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:choice>
+				<xs:attribute name="PlanDateProcessed" type="xs:dateTime"/>
+				<xs:attribute name="Prepaid" type="xs:boolean"/>
+				<xs:attribute name="OrderWeight" type="xs:decimal"/>
+				<xs:attribute name="OrderVolume" type="xs:decimal"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="OrderLink">
 		<xs:choice>
 			<xs:element name="Stock" type="tns:Stock" minOccurs="0"/>
@@ -654,6 +671,7 @@
 				</xs:choice>
 				<xs:attribute name="ShipmentDate" type="xs:dateTime"/>
 				<xs:attribute name="Prepaid" type="xs:boolean"/>
+				<xs:attribute name="OwnerID" type="xs:string"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -835,13 +853,6 @@
 		</xs:choice>
 		<xs:attribute name="ShipmentOrderID" type="xs:string" use="required"/>
 	</xs:complexType>
-	<xs:complexType name="TripDepartureStatus">
-		<xs:attribute name="StatusName" type="xs:string"/>
-		<xs:attribute name="StatusCode" type="xs:int" use="required"/>
-		<xs:attribute name="VehicleID" type="xs:string" use="required"/>
-		<xs:attribute name="TripID" type="xs:string" use="required"/>
-		<xs:attribute name="StatusDate" type="xs:dateTime"/>
-	</xs:complexType>
 	<xs:complexType name="TripOrder">
 		<xs:complexContent>
 			<xs:extension base="tns:OrderLink">
@@ -865,6 +876,13 @@
 		<xs:attribute name="Units" type="xs:integer" use="required"/>
 		<xs:attribute name="Weight" type="xs:decimal" use="required"/>
 		<xs:attribute name="Volume" type="xs:decimal" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="TripOrderStatus">
+		<xs:attribute name="StatusName" type="xs:string"/>
+		<xs:attribute name="StatusCode" type="xs:int" use="required"/>
+		<xs:attribute name="VehicleID" type="xs:string" use="required"/>
+		<xs:attribute name="TripID" type="xs:string" use="required"/>
+		<xs:attribute name="StatusDate" type="xs:dateTime"/>
 	</xs:complexType>
 	<xs:complexType name="TripOrderTask">
 		<xs:choice>
@@ -896,9 +914,9 @@
 		</xs:choice>
 		<xs:attribute name="ClearStatus" type="xs:boolean" default="false"/>
 	</xs:complexType>
-	<xs:complexType name="changeTripDepartureStatusRequest">
+	<xs:complexType name="changeTripOrderStatusRequest">
 		<xs:sequence>
-			<xs:element name="TripDepartureStatus" type="tns:TripDepartureStatus" maxOccurs="unbounded"/>
+			<xs:element name="TripOrderStatus" type="tns:TripOrderStatus" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="createAcceptanceOrderRequest">
@@ -1005,6 +1023,11 @@
 			<xs:element name="Documents" type="tns:OrderProblem" maxOccurs="unbounded"/>
 		</xs:choice>
 		<xs:attribute name="Update" type="xs:boolean" default="false"/>
+	</xs:complexType>
+	<xs:complexType name="createOrderRequest">
+		<xs:choice>
+			<xs:element name="Order" type="tns:Order" maxOccurs="unbounded"/>
+		</xs:choice>
 	</xs:complexType>
 	<xs:complexType name="createOwnerRequest">
 		<xs:choice>
