@@ -798,6 +798,8 @@
 					<xs:element name="OrderRows" type="tns:TransferOrderRow" maxOccurs="unbounded"/>
 					<xs:element name="AddProperties" type="tns:AddProperty" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:choice>
+				<xs:attribute name="OwnerID" type="xs:string"/>
+				<xs:attribute name="TransferDate" type="xs:dateTime"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
