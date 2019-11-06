@@ -198,6 +198,7 @@
 		<xs:attribute name="ReceivingDocumentID" type="xs:string"/>
 		<xs:attribute name="BatchType" type="xs:int"/>
 		<xs:attribute name="CustomsDeclarationNum" type="xs:string"/>
+		<xs:attribute name="BatchCode" type="xs:string"/>
 	</xs:complexType>
 	<xs:complexType name="Brand">
 		<xs:attribute name="BrandID" type="xs:string" use="required"/>
@@ -311,7 +312,7 @@
 		<xs:attribute name="ContractNumber" type="xs:string"/>
 		<xs:attribute name="ContractName" type="xs:string" use="required"/>
 		<xs:attribute name="ClientID" type="xs:string" use="required"/>
-		<xs:attribute name="ОrganizationID" type="xs:string"/>
+		<xs:attribute name="OrganizationID" type="xs:string"/>
 		<xs:attribute name="Manager" type="xs:string"/>
 		<xs:attribute name="Comment" type="xs:string"/>
 	</xs:complexType>
@@ -687,7 +688,6 @@
 		<xs:attribute name="GoodID" type="xs:string"/>
 		<xs:attribute name="GoodName" type="xs:string"/>
 		<xs:attribute name="Quantity" type="xs:decimal" use="required"/>
-		<xs:attribute name="ShipmentDate" type="xs:date"/>
 		<xs:attribute name="Prelimenary" type="xs:boolean"/>
 		<xs:attribute name="StockID" type="xs:string"/>
 		<xs:attribute name="StockName" type="xs:string"/>
